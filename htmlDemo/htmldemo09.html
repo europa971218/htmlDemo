@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title>
+        表格基本结构
+    </title>
+    <meta charset="UTF-8">
+    <!-- 默认情况下，表格是没有边框的。在这个例子中，我们使用CSS加入边框是想让大家更清楚地看到一个表格的结构 -->
+    <!-- 在HTML的学习中，我们只需要知道表格需要用什么标签就行了。记住，HTML只关注结构，CSS才关注样式。 -->
+    <style type="text/css">
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 表格：table标签行：tr标签单元格：td标签 -->
+    <h1>表格</h1>
+    <table>
+        <caption>
+            表格标题
+        </caption>
+        <!-- thead、tbody和tfoot除了使得代码更具有语义之外，还有另外一个重要作用：方便分块来控制表格的CSS样式。 -->
+         <!-- 表头 -->
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>语文</th>
+                <th>数学</th>
+            </tr>
+        </thead>
+        <!-- 表身 -->
+        <tbody>
+            <tr>
+                <td>小明</td>
+                <td>单元格2</td>
+                <td>单元格3</td>
+            </tr>
+            <tr>
+                <td>小红</td>
+                <td>单元格2</td>
+                <td>单元格3</td>
+            </tr>
+            <tr>
+                <td>小绿</td>
+                <td>单元格2</td>
+                <td>单元格3</td>
+            </tr>
+         
+        </tbody>
+        <!-- 表脚 -->
+        <tfoot>
+            <tr>
+                <td>总成绩</td>
+                <td>单元格2</td>
+                <td>单元格3</td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+
+</html>
