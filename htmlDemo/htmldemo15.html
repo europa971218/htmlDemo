@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>表单</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1>表单</h1>
+    <!-- form标签的常用属性，包括表单名称name、提交方式method、提交地址action、打开方式target、编码方式enctype。 -->
+    <!-- method属性用于指定表单数据使用哪一种http提交方法。一个是get，另外一个是post。
+      get在安全性较差，而post安全性较好。所以在实际开发中，我们都是使用post。 -->
+    <form action="https://www.baidu.com" method="get" target="_blank">
+        <!-- input标签的type属性的常见取值：text、password、radio、checkbox、button（submit或者reset）、file -->
+        <!-- 单行文本框的属性：value、size、maxlength.其中size支持px或者纯数字 -->
+        <input type="text" name="username" placeholder="请输入昵称" size="160" maxlength="4"><br />
+        <input type="password" name="password" placeholder="请输入密码"><br />
+        <input type="email" name="email" placeholder="请输入邮箱">
+        <select>
+            <option value="1">qq.com</option>
+            <option value="2">css</option>
+            <option value="3">js</option>
+        </select><br />
+        <!-- 对于单选框，加不加value好像没啥区别啊？为啥还加上呢？ -->
+        <!-- value属性取值一般跟后面的文本相同，之所以加上value属性，是为了方便JavaScript或者服务器操作数据。所有表单元素的value属性的作用都是一样的。 -->
+        <span>性别：</span><input type="radio" name="gender" value="男" checked>男
+        <!-- name属性表示单选按钮所在的组名，而value表示单选按钮的取值，这两个属性必须要设置。 -->
+        <input type="radio" name="gender" value="女">女<br />
+
+        <span>兴趣：</span>
+        <input type="checkbox" name="hobby" value="足球">足球
+        <input type="checkbox" name="hobby" value="篮球">篮球
+        <input type="checkbox" name="hobby" value="跑步">跑步<br />
+        <input type="submit" value="提交">
+        <input type="reset" value="取消">
+    </form>
+</body>
+
+</html>
